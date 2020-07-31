@@ -46,6 +46,10 @@
 				state_cap = <4>;
 				active_pwm = <0 77 120 160 255 255 255 255 255 255>;
 			};
+			normal {
+				state_cap = <4>;
+				active_pwm = <0 77 120 160 255 255 255 255 255 255>;
+			};
 			cool {
 				state_cap = <4>;
 				active_pwm = <0 77 120 160 255 255 255 255 255 255>;

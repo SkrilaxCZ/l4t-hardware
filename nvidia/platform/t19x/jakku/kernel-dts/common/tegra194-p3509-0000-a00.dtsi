@@ -60,7 +60,11 @@
 			default = "quiet";
 			quiet {
 				state_cap = <4>;
-				active_pwm = <0 130 160 200 255 255 255 255 255 255>;
+				active_pwm = <0 77 130 180 255 255 255 255 255 255>;
+			};
+			normal {
+				state_cap = <4>;
+				active_pwm = <0 92 145 190 255 255 255 255 255 255>;
 			};
 			cool {
 				state_cap = <4>;
@@ -72,9 +76,15 @@
 		profiles {
 			default = "quiet";
 			quiet {
-				active_trip_temps = <0 46000 60000 68000 76000
+				active_trip_temps = <0 60000 68000 76000 82000
 						140000 150000 160000 170000 180000>;
-				active_hysteresis = <0 8000 8000 7000 7000
+				active_hysteresis = <0 12000 8000 8000 6000
+						0 0 0 0 0>;
+			};
+			normal {
+				active_trip_temps = <0 50000 60000 68000 76000
+						140000 150000 160000 170000 180000>;
+				active_hysteresis = <0 8000 8000 8000 8000
 						0 0 0 0 0>;
 			};
 			cool {
