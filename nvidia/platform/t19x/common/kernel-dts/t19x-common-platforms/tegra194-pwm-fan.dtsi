@@ -53,6 +53,14 @@
 				active_pwm = <0 77 120 160 255 255 255 255 255 255>;
 #endif
 			};
+			normal {
+				state_cap = <4>;
+#if TEGRA_PWM_FAN_DT_VERSION == DT_VERSION_2
+				cooling-levels = <255 178 135 95 0 0 0 0 0 0>;
+#else
+				active_pwm = <0 77 120 160 255 255 255 255 255 255>;
+#endif
+			};
 			cool {
 				state_cap = <4>;
 #if TEGRA_PWM_FAN_DT_VERSION == DT_VERSION_2
